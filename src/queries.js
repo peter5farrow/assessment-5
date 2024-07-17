@@ -103,7 +103,7 @@ export async function getHumansByAnimalSpecies(species) {
   });
 
   humansAndAnimals.forEach(({ fname, lname, animals }) => {
-    const humanName = fname + lname;
+    const humanName = fname + " " + lname;
 
     animals.forEach((animal) => {
       if (species === animal.species) {
